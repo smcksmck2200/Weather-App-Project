@@ -1,0 +1,65 @@
+body {
+    margin: 0%;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(23, 23, 107), rgb(22, 175, 226));
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+img {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+main {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(to top right, rgb(23, 23, 107), rgb(22, 175, 226));
+}
+
+label {
+    flex-direction: row;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+input {
+    width: 500px;
+    height: 23px;
+}
+
+button {
+    color: black;
+    height: 29px;
+    font-size: large;
+}
+
+footer {
+    flex: 10%;
+    display: flex;
+    background-color: lightgray;
+}
