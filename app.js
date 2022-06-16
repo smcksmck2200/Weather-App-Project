@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const fetch = require('node-fetch')
+const { apikey } = require('./config')
 const { response } = require('express')
 
 const app = express()
@@ -13,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use('/styles', express.static('styles'))
 app.use('/images', express.static('public'))
 
+
 // Get Route
 app.get('/', (req, res) => {
         res.render('index')
@@ -20,7 +22,7 @@ app.get('/', (req, res) => {
     // Post Route
 app.post("/location", (req, res) => {
     let location = req.body.search
-    fetch(`http://api.weatherapi.com/v1/current.json?key=98985a28319148cca7f190051223105&q=${location}&aqi=no`)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${location}&aqi=no`)
         .then(response => response.json())
         .then((data) => {
             const weather = {
