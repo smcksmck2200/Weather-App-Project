@@ -2,10 +2,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const fetch = require('node-fetch')
 const { apikey } = require('./config')
-const { response } = require('express')
+
 
 const app = express()
     // Set view engine to pug and establish view folder
+
 app.set('view engine', 'pug')
 app.set('views', './views')
     // Middleware that processes incoming request
@@ -35,6 +36,5 @@ app.post("/location", (req, res) => {
             }
             res.render('postPage', weather)
         })
-
 })
 app.listen(3000, () => console.log("Server serving"))

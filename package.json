@@ -8,13 +8,11 @@
     "name": "weather-app-project",
     "version": "1.0.0",
     "main": "index.js",
-
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": ". ./config/local.sh && nodemon app.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "description": ""
-
 }
