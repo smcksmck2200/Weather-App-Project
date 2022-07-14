@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const fetch = require('node-fetch')
-const { apikey } = require('./config')
+const { apikey,port } = require('./config')
 
 
 const app = express()
@@ -37,4 +37,4 @@ app.post("/location", (req, res) => {
             res.render('postPage', weather)
         })
 })
-app.listen(3000, () => console.log("Server serving"))
+app.listen(port, () => console.log("Server serving"))
