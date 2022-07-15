@@ -9,7 +9,8 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "dev": ". ./config/local.sh && nodemon app.js"
+        "dev": ". ./config/local.sh && nodemon app.js",
+        "start": "node app.js"
     },
     "keywords": [],
     "author": "",
