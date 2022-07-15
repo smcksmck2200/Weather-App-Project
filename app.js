@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
     // Post Route
 app.post("/location", (req, res) => {
     let location = req.body.search
+   
     fetch(`http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${location}&aqi=no`)
         .then(response => response.json())
         .then((data) => {
