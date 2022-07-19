@@ -1,6 +1,6 @@
 #  Weather Application
 
-The Weather Application is an assignment from the XC Academy to create a full-stack express weather application. The application features an express backend and a pug frontend. A user can type in the name of a city and receive the current forecast of that city. I used https://www.weatherapi.com/ as my API.
+The Weather Application is an assignment from the XC Academy to create a full-stack express weather application. The application features an express backend and a pug frontend. A user can type in the name of a city and receive the current forecast of that city. I used https://www.weatherapi.com/  as my API.
 ## Application
 The application is created using Express, a Node.js web application framework that provides features for web applications.  Body-parser is body parsing middleware, responsible for parsing the incoming request bodies in a middleware before you handle it. Node-fetch npm is a module that brings Fetch API to node.js. My API key and “port” are contained within the config.js file as an export, and the .gitignore file includes the node modules and config file. Pug is a Javascript library, and is a preprocessor that speeds up writing HTML. Two forms were created. The first form is used to provide the input from a submit button to fetch the API.  The second form displays the data from the input.
 ## Code
